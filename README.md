@@ -2,23 +2,23 @@
 R语言可视化笔记
 
 ### 2018.7 ###
-- **ggflags - 国旗与奥运会奖牌的可视化**	[（文章链接）](https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651057765&idx=1&sn=dcbeffbec5f99f2270f6575371b4e3fb&chksm=84d9cff2b3ae46e4d00064d45b059150316aede10be25a37e465a86c38da015a3da72994df90&scene=21#wechat_redirect) （代码链接）
+- **ggflags - 国旗与奥运会奖牌的可视化**	[（文章链接）](https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651057765&idx=1&sn=dcbeffbec5f99f2270f6575371b4e3fb&chksm=84d9cff2b3ae46e4d00064d45b059150316aede10be25a37e465a86c38da015a3da72994df90&scene=21#wechat_redirect) [（代码链接）](https://github.com/schickmush/R-data-visualization/blob/master/2018.7/ggflags%20-%20%E5%9B%BD%E6%97%97%E4%B8%8E%E5%A5%A5%E8%BF%90%E4%BC%9A%E5%A5%96%E7%89%8C%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96.R)
 	- 可视化索契冬奥会各国得奖数，将国旗与国家联系起来
 	- `coord_flip ()` 旋转坐标轴，一是可以添加数据标签，二是不用歪着脖子看
 	- R包：ggflags、ggplot2、dplyr（数据清洗）、tidyr（数据清洗）、rvest（爬虫）、countrycode（国家名缩写）
 
-- **ggplot2 - 绘制误差棒及显著性标记** [（文章链接）](https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651057637&idx=1&sn=f69b192e01ebca087b6556f83a9ca5a3&chksm=84d9cc72b3ae4564b014dadd94c141e36fdf301ba14e6ecfb2ed0db0705c7220717fc6cdc71a&scene=21#wechat_redirect) （代码链接）
+- **ggplot2 - 绘制误差棒及显著性标记** [（文章链接）](https://mp.weixin.qq.com/s?__biz=MzA3MTM3NTA5Ng==&mid=2651057637&idx=1&sn=f69b192e01ebca087b6556f83a9ca5a3&chksm=84d9cc72b3ae4564b014dadd94c141e36fdf301ba14e6ecfb2ed0db0705c7220717fc6cdc71a&scene=21#wechat_redirect) [（代码链接）](https://github.com/schickmush/R-data-visualization/blob/master/2018.7/ggplot2%20-%20%E7%BB%98%E5%88%B6%E8%AF%AF%E5%B7%AE%E6%A3%92%E5%8F%8A%E6%98%BE%E8%91%97%E6%80%A7%E6%A0%87%E8%AE%B0.R)
 	- 使用 `geom_errorbar ()` 绘制带有误差棒的条形图
 	- 使用 `geom_text () `绘制带有显著性标记的条形图
 	- 使用 `geom_segment () `连接两个条形图
 	- 利用包 gridExtra 中 `grid.arrange()` 函数实现将多副图至于一个页面
 	- R包：ggplot2、gridExtra
-- **REmap - 绘制动态地图 **[（文章链接）](https://mp.weixin.qq.com/s?__biz=MzA3Njc0NzA0MA==&mid=2653190246&idx=1&sn=caa66209ad5f4cb59a1a59b715642a60&chksm=848c4029b3fbc93f41d39196e1e931385de355b725f7372e33a2dd02bfd5ff4cce1c25a29945&scene=21#wechat_redirectv) （代码链接）
+- **REmap - 绘制动态地图** [（文章链接）](https://mp.weixin.qq.com/s?__biz=MzA3Njc0NzA0MA==&mid=2653190246&idx=1&sn=caa66209ad5f4cb59a1a59b715642a60&chksm=848c4029b3fbc93f41d39196e1e931385de355b725f7372e33a2dd02bfd5ff4cce1c25a29945&scene=21#wechat_redirectv) [（代码链接）](https://github.com/schickmush/R-data-visualization/blob/master/2018.7/REmap%20-%20%E7%BB%98%E5%88%B6%E5%8A%A8%E6%80%81%E5%9C%B0%E5%9B%BE.R)
 	- 绘制流入图 & 流出图
 	- REmap可以非常轻松的获取城市地点的经纬度数据：`get_city_coord("大连")`	、`get_geo_position(city_list)`
 	- 对拼音与汉字，甚至拼音的大小写都不敏感，可以避免很多麻烦
 	- REmap图表都带有动态交互效果，非常炫酷
-- **ggplot2 - 美国肥胖症可视化** [（文章链接）](https://blog.csdn.net/kmd8d5r/article/details/79213608)（代码链接）
+- **ggplot2 - 美国肥胖症可视化** [（文章链接）](https://blog.csdn.net/kmd8d5r/article/details/79213608)[（代码链接）](https://github.com/schickmush/R-data-visualization/blob/master/2018.7/ggplot2%20-%20%E7%BE%8E%E5%9B%BD%E8%82%A5%E8%83%96%E7%97%87%E5%8F%AF%E8%A7%86%E5%8C%96.R)
 	- 研究美国成年人、儿童以及青少年中肥胖人口最多的州
 	- 对行列名进行重命名的函数：`names()`、`colnames()`，`rownames()`
 	- `gsub()`：对自定义的字符串进行替换
@@ -31,7 +31,7 @@ R语言可视化笔记
 	- `str_split()`：字符串拆分
 	- `str_extract()`、`str_sub()`、`str_subset()`：匹配字符串
 	- `str_replace()`：字符串替换
-- **相关性矩阵分析及其可视化** [（文章链接）](https://blog.csdn.net/kmd8d5r/article/details/79260986) （代码链接）
+- **相关性矩阵分析及其可视化** [（文章链接）](https://blog.csdn.net/kmd8d5r/article/details/79260986) [（代码链接）](https://github.com/schickmush/R-data-visualization/blob/master/2018.7/%E7%9B%B8%E5%85%B3%E6%80%A7%E7%9F%A9%E9%98%B5%E5%88%86%E6%9E%90%E5%8F%8A%E5%85%B6%E5%8F%AF%E8%A7%86%E5%8C%96.R)
 	- base中的 `cor()` ：用来计算相关系数
 	- Hmisc中的 `rcorr()`：能够同时给出相关系数以及显著性水平p-value
 	- `corrplot()` ：来自于包corrplot，通过颜色深浅来显示相关程度
